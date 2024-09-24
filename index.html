@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Num1</title>
+</head>
+<body>
+    <h1>Restaurante el NONO</h1>
+    
+  
+    <div id="menu"></div>
+
+    <!-- Entrada para seleccionar un plato -->
+    <label for="plato">Selecciona el número del/los plato/s (1-10):</label>
+    <input type="number" id="plato" min="1" max="10" placeholder="Número del plato">
+
+    <!-- Botones -->
+    <button onclick="pedirPlato()">Agregar plato</button>
+    <button onclick="finalizarPedido()">Finalizar pedido</button>
+
+    <div id="pedido"></div>
+    
+    <!-- total----cheq cuenta -->
+    <div id="cuenta"></div>
+  
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 
