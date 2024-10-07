@@ -100,7 +100,15 @@ function finalizarPedido() {
         <h3>Descripción Ticket:</h3>
         <p>Total Pedido: $${total}</p>
         <p>Propia: $${propina.toFixed(2)}</p>
-        <p>Total a pagar: $${totalConPropina.toFixed(2)}</p>
-    `;
-}
+        <p>Total a pagar: $${totalConPropina.toFixed(2)}</p>`;
+    }
+
+    // Función para reiniciar el pedido
+
+    function cargarnuevo() {
+        pedido = [];  
+        total = 0;
+        document.getElementById("pedido").innerHTML = "<h3>Tu pedido:</h3><ul><li>Ingresa tu pedido.</li></ul><p>Total Pedido: $0</p>";
+        document.getElementById("cuenta").innerHTML = ""; 
+    }
 mostrarMenu();
